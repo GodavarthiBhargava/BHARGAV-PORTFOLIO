@@ -5,6 +5,10 @@ import {
   klUniversity,
   davSchool,
   snjCollege,
+  sih,
+  patent,
+  edu,
+  crowd,
 } from "../assets";
 
 import {
@@ -94,10 +98,7 @@ export const navLinks = [
     id: "openSource",
     title: "On Progress Projects",
   },
-  {
-    id: "extraCurricular",
-    title: "Extra Curricular",
-  },
+  
   {
     id: "contactMe",
     title: "Contact Me",
@@ -111,16 +112,17 @@ export const educationList = [
     icon: klUniversity,
     title: "KL University, Vijayawada",
     degree: "Bachelor of Technology",
-    duration: "2022 - 2026",
+    duration: "2023 - 2027",
     content1: "Major: Computer Science & Engineering",
-    content2: "CGPA: 9.54/10.0",
+    content2:"Specialization: Cyber Security & BlockChain Technology",
+    content3: "CGPA: 9.54/10.0",
   },
   {
     id: "education-2",
     icon: snjCollege,
     title: "SNJ College",
     degree: "HSC (TSBIE)",
-    duration: "2022",
+    duration: "2021 -2023",
     content1: "Physics, Chemistry, & Mathematics",
     content2: "Percentage: 94.9%",
   },
@@ -129,7 +131,7 @@ export const educationList = [
     icon: davSchool,
     title: "D.A.V Model School",
     degree: "SSC (TSBSE)",
-    duration: "2020",
+    duration: "2021",
     content1: "Percentage: 100%",
     content2: "",
   },
@@ -140,7 +142,7 @@ export const educationList = [
 export const achievements = [
   {
     id: "a-1",
-    icon: gdsc,
+    icon: patent,
     event: "Patent: Mobile-Controlled Water Fetching Robot",
     position: "Patent Filed",
     content1: "Application No. 202541073136 A, August 2025",
@@ -152,7 +154,7 @@ export const achievements = [
   },
   {
     id: "a-2",
-    icon: klUniversity, // or replace with your klu.png once added to assets
+    icon: sih, // or replace with your klu.png once added to assets
     event: "Smart India Hackathon 2025 - Internal Round",
     position: "Team Lead | Top 45 out of 450+ Teams",
     content1: "Led a team representing KL University in the internal round of SIH 2025.",
@@ -229,11 +231,11 @@ export const experiences = [
         duration: "2024 - Present",
         content: [
           {
-            text: "Designed 60+ brochures, 30+ posters for 12+ official college fests, achieving 35% increase in event visibility.",
+            text: "Designed 10+ brochures, 30+ posters for 12+ official college fests, achieving 35% increase in event visibility.",
             link: "",
           },
           {
-            text: "Collaborated with 20+ student committees increasing participation by 50% across 2,500+ students.",
+            text: "Collaborated with 16+ student clubs increasing participation by 50% across 2,500+ students.",
             link: "",
           },
         ],
@@ -261,9 +263,9 @@ export const projects = [
   {
     id: "project-1",
     title: "EduVibe Learning Management System",
-    github: "https://github.com/godavarthibhargava/eduvibe-lms",
-    link: "https://eduvibe-lms.netlify.app/",
-    image: portfolio,
+    github: "https://github.com/GodavarthiBhargava/SDP-EDUVIBE",
+    // link: "https://eduvibe-lms.netlify.app/",
+    image: edu,
     content:
       "Developed full-stack LMS using React, Spring Boot, MySQL with JWT authentication serving 800+ users with 99% uptime. Designed 3 user roles with CRUD operations for 300+ courses, 800+ assignments, deployed on Railway/Render platforms.",
     stack: [
@@ -276,9 +278,8 @@ export const projects = [
   {
     id: "project-2",
     title: "Crowdfunding Platform",
-    github: "https://github.com/godavarthibhargava/crowdfunding-platform",
-    link: "https://crowdfunding-platform.netlify.app/",
-    image: portfolio,
+    github: "https://github.com/GodavarthiBhargava/SDP-CROWDFUNDING-DOCKER",
+    image: crowd,
     content:
       "Developed full-stack crowdfunding platform using React, Spring Boot, MySQL processing 30K+ transactions with 100% security. Implemented 3 user roles with CRUD operations for 150+ projects, 500+ contributions, deployed achieving 95% uptime.",
     stack: [
@@ -378,26 +379,7 @@ export const stats = [
   },
 ];
 
-// List out the extra curricular activities you have indulged in, like - student clubs, research groups etc.
-export const extraCurricular = [
-  {
-    id: 1,
-    organisation: "FOCUS - Official Student Body, KL University",
-    title: "Provision Wing Lead",
-    duration: "2024 - Present",
-    content: [
-      {
-        text: "Led 50+ students across 20+ college events, 8+ major fests, achieving 90% success rate with zero incidents.",
-        link: "",
-      },
-      {
-        text: "Managed logistics for 4,000+ participants, handled 12K+ resource allocation, reaching 6,000+ students.",
-        link: "",
-      },
-    ],
-    logo: gdsc,
-  },
-];
+
 
 // Links to your social media profiles
 export const socialMedia = [
