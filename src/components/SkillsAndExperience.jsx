@@ -101,30 +101,31 @@ const ExperienceCard = (props) => {
 const SkillsAndExperience = () => {
   return (
     <section id="skills" className="mb-12">
-      <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
-        Skills & Experience
+      <h1 className="font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px] mb-8">
+        Skills
       </h1>
-      <div
-        className={layout.section}
-        // whileInView={{ y: [-20, 0], opacity: [0, 1] }}
-        // transition={{ duration: 0.5 }}
-      >
-        {/* Skills */}
-        <motion.div className={`ml-2 mb-6 ${layout.sectionInfo}`}>
-          {skills.map((skill, index) => (
-            <SkillCard key={index} index={index} {...skill} />
-          ))}
-        </motion.div>
 
-        {/* Experience */}
-        <motion.div className="flex flex-1 items-center justify-start flex-col">
-          {experiences.map((exp, index) => (
-            <ExperienceCard key={index} index={index} {...exp} />
-          ))}
-        </motion.div>
+      {/* Skills Section */}
+      <div className="flex flex-wrap justify-between gap-8">
+        {skills.map((skill, index) => (
+          <div key={index} className="flex-1 min-w-[250px]">
+            <SkillCard {...skill} />
+          </div>
+        ))}
+      </div>
+
+      {/* Experience Section */}
+      <h1 className="font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px] mt-12 mb-8">
+        Experience
+      </h1>
+      <div className="flex flex-col gap-6">
+        {experiences.map((exp, index) => (
+          <ExperienceCard key={index} {...exp} />
+        ))}
       </div>
     </section>
   );
 };
+
 
 export default SkillsAndExperience;

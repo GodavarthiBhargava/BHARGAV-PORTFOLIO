@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { close, parthmittal, menu } from "../assets";
+import { close, menu } from "../assets";
 import { navLinks } from "../constants";
 import { scrollToSection } from "../lib/helperFunctions";
 import { motion } from "framer-motion";
@@ -31,12 +31,10 @@ const Navbar = () => {
       className="nav-styles sm:px-16 px-6"
     >
       {/* Logo */}
-      <a href="#home">
-        <img
-          src={parthmittal}
-          alt="Parth Mittal"
-          className="w-[80px] h-[80px]"
-        />
+      <a href="#home" className="text-white hover:text-teal-200">
+        <div className="text-2xl font-bold font-poppins">
+          <span className="text-gradient">G Bhargava</span>
+        </div>
       </a>
 
       {/* List of links */}

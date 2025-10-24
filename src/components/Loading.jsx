@@ -1,12 +1,11 @@
 import styles from "../style";
 import { motion } from "framer-motion";
-import { parthmittal } from "../assets";
 
 const Loading = () => {
   return (
     <motion.div
       id="loading"
-      className={`w-[100vw] h-[100vh] flex "${styles.flexCenter}`}
+      className={`w-[100vw] h-[100vh] flex ${styles.flexCenter} bg-primary`}
       initial={{ scale: 1.0, opacity: 0.25 }}
       animate={{ scale: 2.2, opacity: 0.75 }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
@@ -15,7 +14,9 @@ const Loading = () => {
         ease: "easeInOut",
       }}
     >
-      <img src={parthmittal} alt="Parth Mittal" className="w-[80px] h-[80px]" />
+      <div className="text-white text-6xl font-bold font-poppins">
+        <span className="text-gradient">G Bhargava</span>
+      </div>
     </motion.div>
   );
 };

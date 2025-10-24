@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
 
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[80px] leading-[80px] w-full">
-          <span className="text-gradient">{aboutMe.name}</span>
+          <span className="text-gradient">G Bhargava</span>
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           {aboutMe.intro}
